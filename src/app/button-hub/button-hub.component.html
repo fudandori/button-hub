@@ -1,0 +1,9 @@
+<button *ngFor="let button of buttons; let i = index;"
+    [@grow]="button.hovering"
+    (mouseenter)="hover(true, i)"
+    (mouseleave)="hover(false, i)"
+    type="button"
+    class="btn btn-icon">
+  <clr-icon *ngIf="button.showIcon" [attr.shape]="button.icon"></clr-icon>
+  <span *ngIf="button.showText" style="margin-left: 5px">{{ button.label }}</span>
+</button>
