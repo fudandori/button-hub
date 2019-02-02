@@ -29,7 +29,7 @@ export class AppComponent {
     button = new ButtonData();
     button
     .setIcon('unknown-status')
-    .setLabel('Nerazim');
+    .setLabel('Incurrir horas');
 
     this.buttons.push(button);
   }

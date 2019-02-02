@@ -1,7 +1,7 @@
 export class ButtonData {
     label: string;
     icon: string;
-    hovering = false;
+    hovering = 'icon';
     showIcon = true;
     showText = false;
     timer;
