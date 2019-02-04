@@ -1,7 +1,8 @@
 <button *ngFor="let button of buttons; let i = index;"
-    [@grow]="button.hovering"
+    [@widen]="{value: button.hovering, params: {buttonWidth: buttonWidth, animationTime: animationTime}}"
     (mouseenter)="hover(true, i)"
     (mouseleave)="hover(false, i)"
+    (click)="onClick(button.id)"
     type="button"
     class="btn btn-icon">
   <clr-icon *ngIf="button.showIcon" [attr.shape]="button.icon"></clr-icon>
